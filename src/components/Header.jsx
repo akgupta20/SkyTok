@@ -1,8 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 
-import YT from "../images/YT.png";
-
 import { SlMenu } from "react-icons/sl";
 import { TbPlayerTrackNextFilled , TbPlayerTrackPrevFilled } from "react-icons/tb";
 
@@ -12,6 +10,7 @@ import { FiBell } from "react-icons/fi";
 import { CgClose } from "react-icons/cg";
 import { globalInfo } from "../context/AppContext";
 import Loader from "../shared/loader";
+import SkyTok from '../images/SkyTok.png'
 
 const Header = () => {
 
@@ -53,11 +52,11 @@ const Header = () => {
                         )}
                     </div>
                 )}
-                <Link to="/" className="flex h-5 items-center">
+                <Link to="/" className="flex h-16 mt-2 items-center">
                     <img
                         className="h-full hidden dark:md:block"
-                        src={YT}
-                        alt="Youtube"
+                        src={SkyTok}
+                        alt="SkyTok"
                     />
                 </Link>
             </div>
